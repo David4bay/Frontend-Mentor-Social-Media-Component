@@ -31,7 +31,7 @@ li {
     list-style: none;
 }
 
-ul.header-container {
+ul.header-title {
     height: 75px;
     width: 100%;
 }
@@ -80,11 +80,19 @@ p.header-data {
     font-size: 14px;
 }
 
+div.username-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 div.social-card {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
     background-color: rgb(240, 243, 250);
     border-top: 4px solid rgb(36, 141, 232);
-    padding-top: 25px;
     width: 326px;
     height: 219px;
     border-radius: 5px;
@@ -96,7 +104,7 @@ div.social-card:last-child {
 }
 
 h1.users-engaged {
-    font-size: 48px;
+    font-size: 52px;
     color: hsl(230, 17%, 14%);
 }
 
@@ -105,9 +113,14 @@ header.username {
     font-size: 14px;
 }
 
+i.social-logo {
+    padding-right: 5px;
+}
+
 p.social-data {
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    margin-top: -10px;
     font-weight: 400;
     font-size: 14px;
     color: hsl(228, 12%, 44%);
@@ -192,5 +205,5 @@ div.attribution a {
 @media (min-width: 800px) {
 
 
-    
+
 }
