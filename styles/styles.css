@@ -123,15 +123,56 @@ p.social-data {
 
 header.secondary {
   text-align: left;
+  font-size: 18px;
+  font-weight: 700;
+  color: hsl(228deg, 12%, 44%);
+  padding-bottom: 30px;
+}
+
+div.secondary-social-card {
+  padding: 20px;
+  width: 326px;
+  height: 129px;
+  background-color: rgb(240, 243, 250);
+  margin-bottom: 16px;
+  border-radius: 5px;
+}
+
+ul.header-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+li.header-stats {
+  display: grid;
+  justify-self: start;
+}
+
+li.header-stats:nth-child(2) {
+  display: grid;
+  justify-self: end;
+}
+
+ul.body-stats {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+}
+
+li.body-stat {
+  display: grid;
+  justify-self: start;
+}
+
+li.body-stat:nth-child(2) {
+  display: grid;
+  justify-self: end;
 }
 
 footer.frontend-user {
-  display: grid;
-  grid-template-columns: 1fr;
-  background-color: aliceblue;
+  width: 100%;
   text-align: center;
-  width: 100vw;
-  align-self: end;
+  background-color: aliceblue;
 }
 
 div.attribution {
