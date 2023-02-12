@@ -132,7 +132,6 @@ header.secondary {
 div.secondary-social-card {
   display: flex;
   flex-direction: column;
-  padding: 20px;
   width: 326px;
   height: 129px;
   background-color: rgb(240, 243, 250);
@@ -143,19 +142,41 @@ div.secondary-social-card {
 ul.header-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-self: flex-start;
+  padding: 20px;
 }
 
 ul.body-stats {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-self: flex-end;
+  padding: 0 20px;
+}
+
+li.header-stats:first-child {
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(228deg, 12%, 44%);
+}
+
+li.body-stat:first-child {
+  font-size: 32px;
+  color: hsl(230deg, 17%, 14%);
+}
+
+li.body-stat:nth-child(2) {
+  display: flex;
+  font-size: 11px;
+  align-self: center;
 }
 
 footer.frontend-user {
   width: 100%;
   text-align: center;
   background-color: aliceblue;
+  margin-top: 25px;
 }
 
 div.attribution {
