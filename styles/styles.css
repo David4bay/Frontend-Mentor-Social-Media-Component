@@ -47,19 +47,23 @@ li.theme-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: space-between;
+  height: 80px;
 }
 
 span.theme-title {
   display: grid;
   justify-self: start;
+  color: hsl(228deg, 12%, 44%);
+  font-size: 14px;
+  align-self: start;
   margin-top: 25px;
 }
 
 div.theme-toggle {
   display: grid;
   justify-self: end;
-  align-self: end;
-  margin-top: 17px;
+  align-self: start;
+  margin-top: 22px;
   width: 50px;
   height: 26px;
   border-radius: 15px;
@@ -73,6 +77,43 @@ header.main {
 
 p.header-data {
   color: hsl(228deg, 12%, 44%);
+  font-size: 14px;
+}
+
+div.social-card {
+  display: grid;
+  background-color: rgb(240, 243, 250);
+  border-top: 4px solid rgb(36, 141, 232);
+  padding-top: 25px;
+  width: 326px;
+  height: 219px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+h1.users-engaged {
+  font-size: 48px;
+}
+
+header.username {
+  color: hsl(228deg, 12%, 44%);
+  font-size: 14px;
+}
+
+p.social-data {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-size: 14px;
+  color: hsl(228deg, 12%, 44%);
+}
+
+.up {
+  color: rgb(52, 150, 125);
+}
+
+.down {
+  color: red;
 }
 
 div.attribution {
