@@ -156,6 +156,7 @@ ul.header-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 15px;
   align-self: flex-start;
   padding: 20px;
 }
