@@ -130,6 +130,8 @@ header.secondary {
 }
 
 div.secondary-social-card {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
   width: 326px;
   height: 129px;
@@ -139,34 +141,15 @@ div.secondary-social-card {
 }
 
 ul.header-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-li.header-stats {
-  display: grid;
-  justify-self: start;
-}
-
-li.header-stats:nth-child(2) {
-  display: grid;
-  justify-self: end;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
 }
 
 ul.body-stats {
-  display: grid;
-  justify-content: space-between;
-  grid-template-columns: 1fr 1fr;
-}
-
-li.body-stat {
-  display: grid;
-  justify-self: start;
-}
-
-li.body-stat:nth-child(2) {
-  display: grid;
-  justify-self: end;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
 }
 
 footer.frontend-user {
