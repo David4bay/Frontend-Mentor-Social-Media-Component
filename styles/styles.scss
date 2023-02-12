@@ -1,2 +1,29 @@
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+div.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+div.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
