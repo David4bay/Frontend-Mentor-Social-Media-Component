@@ -23,7 +23,7 @@ body {
 
 main.dashboard-wrapper {
     max-width: 327px;
-    margin: 40px auto 40px auto;
+    margin: 40px auto auto auto;
     text-align: center;
 }
 
@@ -91,8 +91,13 @@ div.social-card {
     margin-bottom: 30px;
 }
 
+div.social-card:last-child {
+    border-top: 4px solid rgb(177, 80, 89);
+}
+
 h1.users-engaged {
     font-size: 48px;
+    color: hsl(230, 17%, 14%);
 }
 
 header.username {
@@ -114,13 +119,27 @@ p.social-data {
 }
 
 .down {
-    color: red;
+    color: rgb(177, 80, 89);
 }
 
-div.attribution { 
-    font-size: 11px; text-align: center; 
+header.secondary {
+    text-align: left;
+}
+
+footer.frontend-user {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: aliceblue;
+    text-align: center;
+    width: 100vw;
+    align-self: end;
+}
+
+div.attribution {
+    font-size: 11px;
 }
 
 div.attribution a { 
     color: hsl(228, 45%, 44%); 
+    text-decoration: none;
 }
