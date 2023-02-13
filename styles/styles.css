@@ -64,9 +64,19 @@ div.theme-toggle {
   justify-self: end;
   align-self: start;
   margin-top: 22px;
+  border: 1px solid;
   width: 50px;
   height: 26px;
   border-radius: 15px;
+  position: relative;
+}
+
+div.toggle {
+  height: 20px;
+  width: 20px;
+  margin: 2px;
+  border: 1px solid;
+  border-radius: 100%;
 }
 
 header.main {
@@ -98,6 +108,20 @@ div.social-card {
   border-radius: 5px;
   margin-bottom: 30px;
   position: relative;
+}
+
+div.social-card:hover {
+  background-color: rgb(212, 214, 226);
+  cursor: pointer;
+}
+
+div.secondary-social-card:hover {
+  background-color: rgb(225, 227, 240);
+  cursor: pointer;
+}
+
+div.theme-toggle:hover {
+  cursor: pointer;
 }
 
 div.social-style {
@@ -260,10 +284,31 @@ div.attribution a {
   main.dashboard-wrapper {
     min-width: 1200px;
   }
+  hr {
+    display: none;
+  }
+  nav.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   section.main-dash-container {
     display: flex;
     flex-direction: row;
     gap: 30px;
+  }
+  ul.theme-container {
+    display: flex;
+    flex-direction: row;
+  }
+  li.theme-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  div.theme-toggle {
+    display: flex;
+    margin-top: 30px;
   }
   section.secondary-dash-container {
     display: flex;
