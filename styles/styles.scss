@@ -90,17 +90,26 @@ div.social-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 15px;
     background-color: rgb(240, 243, 250);
-    border-top: 4px solid rgb(36, 141, 232);
+    border-top: 4px solid rgb(34, 139, 230);
     width: 326px;
     height: 219px;
     border-radius: 5px;
     margin-bottom: 30px;
 }
 
+div.social-card:nth-child(2) {
+    border-top: 4px solid rgb(40, 158, 230);
+}
+
+div.social-card:nth-child(3) {
+    border-top: 4px solid linear-gradient(90deg, hsl(37, 97%, 70%) 50%,hsl(329, 70%, 58%));
+}
+
 div.social-card:last-child {
-    border-top: 4px solid rgb(177, 80, 89);
+    border-top: 4px solid rgb(180, 10, 46);
 }
 
 h1.users-engaged {
@@ -113,8 +122,37 @@ header.username {
     font-size: 14px;
 }
 
+div.current-stats {
+    display: flex;
+    flex-direction: row;
+}
+
 i.social-logo {
     padding-right: 5px;
+}
+
+i.bi-facebook {
+    color: rgb(33, 165, 247);
+}
+
+i.bi-instagram {
+    color: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+i.bi-caret-down-fill {
+    display: flex;
+    align-self: center;
+    padding-right: 4px;
+}
+
+i.bi-caret-up-fill {
+    display: flex;
+    align-self: center;
+    padding-right: 4px;
+}
+
+i.bi-twitter {
+    color: rgb(33, 165, 247);
 }
 
 p.social-data {
@@ -128,11 +166,11 @@ p.social-data {
 }
 
 .up {
-    color: rgb(52, 150, 125);
+    color: rgb(58, 165, 137);
 }
 
 .down {
-    color: rgb(177, 80, 89);
+    color: rgb(180, 10, 46);
 }
 
 header.secondary {
@@ -157,7 +195,7 @@ ul.header-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     align-self: flex-start;
     padding: 20px;
 }
@@ -184,7 +222,7 @@ li.body-stat:first-child {
 li.body-stat:nth-child(2) {
     display: flex;
     font-size: 11px;
-    align-self: center;
+    align-self: flex-end;
 }
 
 footer.frontend-user {
