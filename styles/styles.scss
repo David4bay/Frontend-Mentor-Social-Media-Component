@@ -105,7 +105,9 @@ div.social-card:nth-child(2) {
 }
 
 div.social-card:nth-child(3) {
-    border-top: 4px solid linear-gradient(90deg, hsl(37, 97%, 70%) 50%,hsl(329, 70%, 58%));
+    border-top: 4px solid;
+    border-color: linear-gradient(45deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    
 }
 
 div.social-card:last-child {
@@ -136,7 +138,9 @@ i.bi-facebook {
 }
 
 i.bi-instagram {
-    color: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    background: linear-gradient(45deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 i.bi-caret-down-fill {
