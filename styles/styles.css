@@ -64,19 +64,21 @@ div.theme-toggle {
   justify-self: end;
   align-self: start;
   margin-top: 22px;
-  border: 1px solid;
+  border: none;
   width: 50px;
   height: 26px;
   border-radius: 15px;
   position: relative;
+  background-color: rgb(174, 178, 203);
 }
 
 div.toggle {
-  height: 20px;
-  width: 20px;
+  height: 21px;
+  width: 21px;
   margin: 2px;
-  border: 1px solid;
+  border: none;
   border-radius: 100%;
+  background-color: hsl(0deg, 0%, 100%);
   transform: translateX(85%);
   transition: 0.4s;
 }
@@ -85,12 +87,16 @@ input[type=checkbox] {
   inset: 0;
   position: absolute;
   border-radius: 15px;
-  z-index: 9999;
+  z-index: 99999;
   opacity: 0;
 }
 
 input[type=checkbox]:checked ~ .toggle {
   transform: translateX(10%);
+}
+
+input div.theme-toggle {
+  background: linear-gradient(45deg, hsl(210deg, 78%, 56%), hsl(146deg, 68%, 55%));
 }
 
 header.main {
