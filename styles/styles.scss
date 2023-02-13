@@ -37,21 +37,21 @@ ul.header-title {
 }
 
 li.header-wrapper {
-    display: grid;
-    grid-row: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     text-align: left;
     gap: 10px;
 }
 
 li.theme-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     height: 80px;
 }
 
 span.theme-title {
-    display: grid;
+    display: flex;
     justify-self: start;
     color: hsl(228, 12%, 44%);
     font-size: 14px;
@@ -60,7 +60,7 @@ span.theme-title {
 }
 
 div.theme-toggle {
-    display: grid;
+    display: flex;
     justify-self: end;
     align-self: start;
     margin-top: 22px;
@@ -93,25 +93,36 @@ div.social-card {
     align-items: center;
     gap: 15px;
     background-color: rgb(240, 243, 250);
-    border-top: 4px solid rgb(34, 139, 230);
     width: 326px;
     height: 219px;
     border-radius: 5px;
     margin-bottom: 30px;
+    position: relative;
 }
 
-div.social-card:nth-child(2) {
-    border-top: 4px solid rgb(40, 158, 230);
+div.social-card-style {
+    height: 4px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: absolute;
+    top: 0;
 }
 
-div.social-card:nth-child(3) {
-    border-top: 4px solid;
-    border-color: linear-gradient(45deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
-    
+div.social-card-style:first-child {
+    background-color: rgb(36, 141, 232);
 }
 
-div.social-card:last-child {
-    border-top: 4px solid rgb(180, 10, 46);
+div.social-card-style:nth-child(2) {
+    background: rgb(40, 158, 228);
+}
+
+div.social-card-style:nth-child(3) {
+    background: linear-gradient(45deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+div.social-card-style:last-child {
+    background: rgb(180, 10, 46);
 }
 
 h1.users-engaged {
@@ -129,7 +140,7 @@ div.current-stats {
     flex-direction: row;
 }
 
-i.social-logo {
+i.social-logo-main {
     padding-right: 5px;
 }
 
