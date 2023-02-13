@@ -254,4 +254,29 @@ div.attribution {
 div.attribution a {
   color: hsl(228deg, 45%, 44%);
   text-decoration: none;
+}
+
+@media (min-width: 800px) {
+  main.dashboard-wrapper {
+    min-width: 1200px;
+  }
+  section.main-dash-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  section.secondary-dash-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  div.secondary-social-card {
+    width: 277px;
+    height: 125px;
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+  }
 }/*# sourceMappingURL=styles.css.map */
