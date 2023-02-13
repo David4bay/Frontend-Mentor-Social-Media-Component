@@ -77,6 +77,20 @@ div.toggle {
     margin: 2px;
     border: 1px solid;
     border-radius: 100%;
+    transform: translateX(85%);
+    transition: 0.4s;
+}
+
+input[type="checkbox"] {
+    inset: 0;
+    position: absolute;
+    border-radius: 15px;
+    z-index: 9999;
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked ~ .toggle {
+    transform: translateX(10%);
 }
 
 header.main {
@@ -311,6 +325,7 @@ ul.theme-container {
 li.theme-wrapper {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 15px;
 }
 
