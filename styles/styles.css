@@ -34,6 +34,14 @@ body {
   background-color: hsl(228deg, 34%, 66%);
 }
 
+.text-white {
+  color: hsl(0deg, 0%, 100%);
+}
+
+.active-switch {
+  background: linear-gradient(45deg, hsl(210deg, 78%, 56%), hsl(146deg, 68%, 55%));
+}
+
 .dark-card-text {
   color: hsl(228deg, 12%, 44%);
 }
@@ -302,6 +310,7 @@ footer.frontend-user {
   text-align: center;
   background-color: aliceblue;
   margin-top: 25px;
+  color: #000;
 }
 
 div.attribution {

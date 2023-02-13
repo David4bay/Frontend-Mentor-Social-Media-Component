@@ -1,11 +1,14 @@
 const toggle = document.querySelector("#theme");
 const switchButton = document.querySelector(".theme-toggle");
+const body = document.querySelector('body');
 const main = document.querySelector('main');
+const mainCards = document.querySelectorAll('.social-card')
+const userColor = document.querySelectorAll('h1.users-engaged');
 
-toggle.addEventListener('click', function () {
-  if (main.classList.contains("dark-main")) {
-    main.classList.add("dark-main");
-  } else {
-    main.classList.remove("dark-main");
+toggle.addEventListener('change', function () {
+  body.classList.toggle('dark-main');
+  switchButton.classList.toggle('active-switch');
+  for (let i = 0; i < mainCards.length; i++) {
+    mainCards[i].classList.toggle('text-white');
   }
 });
