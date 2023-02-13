@@ -100,29 +100,30 @@ div.social-card {
     position: relative;
 }
 
-div.social-card-style {
+div.social-style {
     height: 4px;
     width: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    background-color: none;
     position: absolute;
     top: 0;
 }
 
-div.social-card-style:first-child {
+div.facebook {
     background-color: rgb(36, 141, 232);
 }
 
-div.social-card-style:nth-child(2) {
-    background: rgb(40, 158, 228);
+div.twitter {
+    background-color: rgb(67, 150, 204);
 }
 
-div.social-card-style:nth-child(3) {
-    background: linear-gradient(45deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+div.instagram {
+    background: linear-gradient(45deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%))
 }
 
-div.social-card-style:last-child {
-    background: rgb(180, 10, 46);
+div.youtube {
+    background-color: rgb(144, 25, 53);
 }
 
 h1.users-engaged {
