@@ -21,7 +21,7 @@ body {
   background-color: hsl(0deg, 0%, 100%);
 }
 
-.dark-main-bg {
+.dark-main {
   background-color: hsl(230deg, 17%, 14%);
   color: hsl(0deg, 0%, 100%);
 }
@@ -313,7 +313,7 @@ div.attribution a {
   text-decoration: none;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
   main.dashboard-wrapper {
     min-width: 1200px;
   }
