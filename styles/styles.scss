@@ -83,6 +83,10 @@ div.theme-toggle {
     background: var(--toggle-gradient);
 }
 
+.theme-toggle:hover {
+    background: linear-gradient(45deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%))
+}
+
 div.toggle {
     height: 20px;
     width: 20px;
@@ -134,12 +138,13 @@ div.social-card {
     height: 219px;
     border-radius: 5px;
     margin-bottom: 30px;
-    transition: hover 0.4s;
+    transition: all 0.4s;
     position: relative;
 }
 
-div.social-card:hover {
+.social-card:hover {
     background-color: rgb(212, 214, 226);
+    transform: translateY(-2%);
     cursor: pointer;
 }
 
