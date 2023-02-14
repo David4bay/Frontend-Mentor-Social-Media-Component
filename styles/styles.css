@@ -34,7 +34,7 @@ body {
   background-color: hsl(228deg, 34%, 66%);
 }
 
-.text {
+status .font-color {
   color: hsl(0deg, 0%, 100%);
 }
 
