@@ -63,4 +63,4 @@ I learned more DOM manipulation methods in this project, as keeping track of DOM
 
 ## Acknowledgments
 
-![Ese Alli's](https://github.com/EseAlli) JavaScript implementation was very useful in setting DOM node themes.
+[Ese Alli's](https://github.com/EseAlli) JavaScript implementation was very useful in setting DOM node themes.
