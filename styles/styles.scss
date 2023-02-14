@@ -1,3 +1,14 @@
+:root {
+ --toggle-gradient: hsl(230, 22%, 74%);
+ --card-bg: hsl(227, 47%, 96%);
+ --background: hsl(0, 0%, 100%);
+ --pattern: hsl(225, 100%, 98%);
+ --primary-text: hsl(228, 12%, 44%);
+ --secondary-text: hsl(230, 17%, 14%);
+ --overview: hsl(228, 12%, 44%);
+}
+
+
 * {
     padding: 0;
     margin: 0;
@@ -18,32 +29,7 @@ body {
     font-family: 'Inter', sans-serif;
     font-weight: 900;
     font-size: 16px;
-    background-color: hsl(0, 0%, 100%);
-}
-
-.dark-main {
-    background-color: hsl(230, 17%, 14%);
-    color:hsl(0, 0%, 100%);
-}
-
-.dark-card-bg {
-    background-color: hsl(228, 28%, 20%);  
-}
-
-.dark-card-bg:hover {
-    background-color: hsl(228, 34%, 66%);
-}
-
-.font-color {
-    color: hsl(0, 0%, 100%);
-}
-
-.active-switch {
-    background: linear-gradient(45deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
-}
-
-.dark-card-text {
-    color: hsl(228, 12%, 44%);
+    background-color: var(--background);
 }
 
 main.dashboard-wrapper {
@@ -78,7 +64,7 @@ li.theme-wrapper {
 span.theme-title {
     display: flex;
     justify-self: start;
-    color: hsl(228, 12%, 44%);
+    color: var(--primary-text);
     font-size: 14px;
     align-self: start;
     margin-top: 25px;
@@ -94,7 +80,7 @@ div.theme-toggle {
     height: 26px;
     border-radius: 15px;
     position: relative;
-    background-color: rgb(174, 178, 203);
+    background: var(--toggle-gradient);
 }
 
 div.toggle {
@@ -103,7 +89,7 @@ div.toggle {
     margin: 3px;
     border: none;
     border-radius: 100%;
-    background-color: hsl(0, 0%, 100%);
+    background-color: var(--background);
     transform: translateX(115%);
     transition: 0.4s;
 }
@@ -123,11 +109,11 @@ input[type="checkbox"]:checked ~ .toggle {
 header.main {
     font-size: 24px;
     font-weight: 700;
-    color: hsl(230, 17%, 14%);
+    color: var(--secondary-text);
 }
 
 p.header-data {
-    color: hsl(228, 12%, 44%);
+    color: var(--primary-text);
     font-size: 14px;
 }
 
@@ -143,21 +129,17 @@ div.social-card {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    background-color: rgb(240, 243, 250);
+    background-color: var(--card-bg);
     width: 326px;
     height: 219px;
     border-radius: 5px;
     margin-bottom: 30px;
+    transition: hover 0.4s;
     position: relative;
 }
 
 div.social-card:hover {
     background-color: rgb(212, 214, 226);
-    cursor: pointer;
-}
-
-div.secondary-social-card:hover {
-    background-color: rgb(225, 227, 240);
     cursor: pointer;
 }
 
@@ -193,11 +175,11 @@ div.youtube {
 
 h1.users-engaged {
     font-size: 52px;
-    color: hsl(230, 17%, 14%);
+    color: var(--secondary-text);
 }
 
 header.username {
-    color: hsl(228, 12%, 44%);
+    color: var(--primary-text);
     font-size: 14px;
 }
 
@@ -242,8 +224,7 @@ p.social-data {
     margin-top: -10px;
     font-weight: 400;
     font-size: 14px;
-    color: hsl(228, 12%, 44%);
-    
+    color: var(--primary-text); 
 }
 
 .up {
@@ -256,9 +237,9 @@ p.social-data {
 
 header.secondary {
     text-align: left;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 700;
-    color: hsl(228, 12%, 44%);
+    color: var(--overview);
     padding-bottom: 30px;
 }
 
@@ -267,9 +248,16 @@ div.secondary-social-card {
     flex-direction: column;
     width: 326px;
     height: 129px;
-    background-color: rgb(240, 243, 250);
+    background-color: var(--card-bg);
     margin-bottom: 16px;
     border-radius: 5px;
+    transition: ease-in-out 0.4s;
+}
+
+div.secondary-social-card:hover {
+    transform: translateY(-5%);
+    background-color: rgb(225, 227, 240);
+    cursor: pointer;
 }
 
 ul.header-container {
@@ -292,12 +280,12 @@ ul.body-stats {
 li.header-stats:first-child {
     font-size: 14px;
     font-weight: 700;
-    color: hsl(228, 12%, 44%);
+    color: var(--primary-text);
 }
 
 li.body-stat:first-child {
     font-size: 32px;
-    color: hsl(230, 17%, 14%);
+    color: var(--secondary-text);
 }
 
 li.body-stat:nth-child(2) {
