@@ -9,7 +9,7 @@ switchButton.addEventListener('change', () => {
 function darkMode() {
     mode = 'dark';
     root.setProperty('--background', 'hsl(0, 0%, 100%)');
-    root.setProperty('--pattern', 'hsl(255, 100%, 98%)');
+    root.setProperty('--pattern', 'hsl(205, 100%, 98%)');
     root.setProperty('--card-bg', 'hsl(227, 47%, 96%)');
     root.setProperty('--primary-text', 'hsl(228, 12%, 44%)');
     root.setProperty('--secondary-text', 'hsl(230, 17%, 14%)');

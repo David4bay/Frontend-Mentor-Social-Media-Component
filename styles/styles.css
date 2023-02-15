@@ -2,7 +2,7 @@
   --toggle-gradient: hsl(230, 22%, 74%);
   --card-bg: hsl(227, 47%, 96%);
   --background: hsl(0, 0%, 100%);
-  --pattern: hsl(255, 100%, 98%);
+  --pattern: hsl(205, 100%, 98%);
   --primary-text: hsl(228, 12%, 44%);
   --secondary-text: hsl(230, 17%, 14%);
   --overview: hsl(228, 12%, 44%);
@@ -152,14 +152,13 @@ div.social-card {
 }
 
 div.pattern {
-  width: 200vw;
-  position: absolute;
+  height: 40vh;
   top: 0;
   left: 0;
   right: 0;
-  height: 40vh;
   z-index: -1;
   background: var(--pattern);
+  position: absolute;
 }
 
 div.theme-toggle:hover {
