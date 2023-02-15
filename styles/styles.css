@@ -344,10 +344,10 @@ i.down-down {
     transform: translateY(0);
   }
   25% {
-    transform: translateY(-13%);
+    transform: translateY(-12%);
   }
   75% {
-    transform: translateY(13%);
+    transform: translateY(12%);
   }
   100% {
     transform: translateY(0);
@@ -359,10 +359,10 @@ i.down-down {
     transform: translateY(0);
   }
   25% {
-    transform: translateY(-13%);
+    transform: translateY(-12%);
   }
   75% {
-    transform: translateY(13%);
+    transform: translateY(12%);
   }
   100% {
     transform: translateY(0);
@@ -373,10 +373,10 @@ i.down-down {
     transform: translateY(0);
   }
   25% {
-    transform: translateY(13%);
+    transform: translateY(12%);
   }
   75% {
-    transform: translateY(-13%);
+    transform: translateY(-12%);
   }
   100% {
     transform: translateY(0);
@@ -387,10 +387,10 @@ i.down-down {
     transform: translateY(0);
   }
   25% {
-    transform: translateY(13%);
+    transform: translateY(12%);
   }
   75% {
-    transform: translateY(-13%);
+    transform: translateY(-12%);
   }
   100% {
     transform: translateY(0);
