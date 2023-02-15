@@ -150,6 +150,17 @@ div.social-card {
   cursor: pointer;
 }
 
+div.pattern {
+  width: 200vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40vh;
+  z-index: -1;
+  background: var(--pattern);
+}
+
 div.theme-toggle:hover {
   cursor: pointer;
 }
