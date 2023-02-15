@@ -20,7 +20,7 @@ function darkMode() {
 function lightMode() {
     mode = 'light';
     root.setProperty('--background', 'hsl(230, 17%, 14%)');
-    root.setProperty('--pattern', 'hsl(232, 19%, 15%)');
+    root.setProperty('--pattern', 'hsl(232, 24%, 15%)');
     root.setProperty('--card-bg', 'hsl(228, 28%, 20%)');
     root.setProperty('--primary-text', 'hsl(228, 34%, 66%)');
     root.setProperty('--secondary-text', 'hsl(0, 0%, 100%)');
