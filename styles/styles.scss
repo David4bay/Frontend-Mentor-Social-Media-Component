@@ -270,7 +270,7 @@ div.secondary-social-card {
     background-color: var(--card-bg);
     margin-bottom: 16px;
     border-radius: 5px;
-    transition: ease-in-out 0.4s;
+    transition: 0.4s;
 }
 
 div.secondary-social-card:hover {
@@ -328,6 +328,45 @@ div.attribution {
 div.attribution a { 
     color: hsl(228, 45%, 44%); 
     text-decoration: none;
+}
+
+
+i.up-up {
+    animation: up-up 1s infinite;
+}
+
+i.down-down {
+    animation: down-down 1s infinite;
+}
+
+@keyframes up-up {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-13%);
+    }
+    75% {
+        transform: translateY(13%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes down-down {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(13%);
+    }
+    75% {
+        transform: translateY(-13%);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @media (min-width: 1200px) {
